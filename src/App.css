@@ -1,0 +1,145 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.app-container {
+  width: 90%;
+  max-width: 1800px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.app-title {
+  text-align: center;
+  color: #0f0f0f;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.subreddit-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.subreddit-input input {
+  width: 250px;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.subreddit-input button {
+  background-color: #6a5acd;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: -0px;
+}
+
+.subreddit-input input:focus {
+  border-color: #6a5acd;
+  outline: none;
+}
+
+.subreddit-input button:hover {
+  background-color: #483d8b;
+  transform: scale(1.05);
+}
+
+.subreddit-input button:active {
+  transform: scale(0.98);
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.column {
+  flex: 1;
+  padding: 30px;
+  border-radius: 0px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.posts-column {
+  background: #dadadf;
+}
+
+.favorites-column {
+  background: #cbb6f3;
+  color: #0c0c0c;
+}
+
+.column:hover {
+  transform: translateY(-15px);
+}
+
+.posts-section,
+.favourites-section {
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #ffffff;
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s ease;
+}
+
+li:hover {
+  background: #8ebfec;
+}
+
+/* Button Styling */
+button {
+  background-color: #6a5acd;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #483d8b;
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(0.98);
+}
